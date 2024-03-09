@@ -1,0 +1,10 @@
+def are_anagrams(str1, str2):
+    if sorted(str1) == sorted(str2):
+        return "Yes"
+    else:
+        return "No"
+
+str1, str2 = 'coding', 'ingodc'
+print(are_anagrams(str1, str2))  
+str1, str2 = 'hello', 'hoeli'
+print(are_anagrams(str1, str2))  
