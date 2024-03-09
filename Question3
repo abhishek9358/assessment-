@@ -1,0 +1,19 @@
+def find_best_buy_price(n, price_changes):
+   
+    cumulative_price = 0
+    min_price = 0  
+    
+    for change in price_changes:
+        cumulative_price += change
+        min_price = min(min_price, cumulative_price)
+    
+    
+    return min_price
+
+# Example input
+n = 5
+price_changes = [-39957, -17136, 35466, 21820, -26711]
+
+# Find the best buy price
+best_buy_price = find_best_buy_price(n, price_changes)
+print(best_buy_price)
