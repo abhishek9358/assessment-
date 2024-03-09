@@ -1,0 +1,13 @@
+# Prompt user for input
+total_stairs = int(input("Enter the number of stairs: "))
+steps_per_stride = int(input("Enter the number of steps: "))
+
+# Calculate total steps
+# The '//' operator performs integer (floor) division, and the '%' operator checks for a remainder
+total_steps = total_stairs // steps_per_stride
+
+# If there's a remainder, an additional step is needed
+if total_stairs % steps_per_stride != 0:
+    total_steps += 1
+
+print(f"Total steps taken: {total_steps}")
